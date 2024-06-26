@@ -1,0 +1,56 @@
+.fullScreenContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  min-width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0; 
+}
+
+
+.h4Typography {
+  color: blue;
+  font-weight: bold;
+  font-family: 'Arial';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.styledTableContainer {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.styledButton {
+  background-color: #1976d2; 
+  color: #fff; 
+}
+
+
+
+.searchInput {
+  border-radius: 4px;
+  background-color: #ffffff; 
+  transition: box-shadow 0.3s ease;
+}
+button{
+  max-width: fit-content;
+  
+}
+.sortLabel {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+
+
