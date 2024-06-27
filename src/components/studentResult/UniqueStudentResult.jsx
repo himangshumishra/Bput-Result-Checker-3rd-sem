@@ -46,7 +46,7 @@ const UniqueStudentResult = () => {
   // const subjectsJson = JSON.stringify(subjects);
   // console.log('Subjects JSON:', subjectsJson);
   return (
-    <Container className={styles.overlay}>
+    <Container className={styles.overlay}  style={{ maxHeight: '100vh', overflowY: 'auto' }}>
       <Paper className={styles.card}>
         {/* <IconButton style={{color:'red'}}className={styles.closeButton} onClick={handleClose}> */}
         <div className={styles.closeButton}>
@@ -63,7 +63,7 @@ const UniqueStudentResult = () => {
           <hr />
         </Typography>
         {subjects.length > 0 ? (
-          <TableContainer component={Paper}>
+       <TableContainer>
             <Table>
               <TableHead>
                 <TableRow>
