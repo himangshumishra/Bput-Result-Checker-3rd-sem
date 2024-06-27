@@ -12,6 +12,7 @@ const UniqueStudentResult = () => {
   useEffect(() => {
     if (selectedStudent && data.length > 0) {
       const studentId = selectedStudent.rollNo % 100;
+      // console.log(selectedStudent);
 
       if (studentId > 0 && studentId <= data.length) {
         const studentData = data[studentId - 1];
@@ -58,7 +59,7 @@ const UniqueStudentResult = () => {
         </Typography>
         <Typography variant="h5">
          
-          <strong>Roll Number:</strong> {selectedStudent.rollNo}
+          <strong>Registration Number:</strong> {selectedStudent.rollNo}
           <hr />
         </Typography>
         {subjects.length > 0 ? (
@@ -74,13 +75,14 @@ const UniqueStudentResult = () => {
               <TableBody>
                 {subjects.map((subject, index) => (
                   <TableRow key={index}>
-                    <TableCell  style={{fontWeight:'bolder',fontSize:'73%'}}>{subject.name}</TableCell>
-                    <TableCell style={{fontWeight:'bolder',fontSize:'73%'}}>{subject.grade}</TableCell>
-                    <TableCell style={{fontWeight:'bolder',fontSize:'73%'}}>{subject.points}</TableCell>
+                    <TableCell  style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.name}</TableCell>
+                    <TableCell style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.grade}</TableCell>
+                    <TableCell style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.points}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
+            <div><h3> Total SGPA is {selectedStudent.sgpa}</h3></div>
             <button style={{fontWeight:'bolder',fontSize:'larger', borderRadius:'50px'}} onClick={handleClose}>Close</button>
           </TableContainer>
         ) : (

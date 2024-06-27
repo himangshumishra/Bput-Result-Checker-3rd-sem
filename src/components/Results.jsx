@@ -94,8 +94,8 @@ const Results = () => {
   if (loading) {
     return (
       <Container className={styles.fullScreenContainer}>
-        <div style={{ margin: '50%' }}>
-          <CircularProgress size={69} />
+        <div style={{ marginTop: '25%',marginLeft:'45%' }}>
+          <CircularProgress style={{textAlign:'center'}} size={69} />
         </div>
       </Container>
     );
@@ -115,7 +115,7 @@ const Results = () => {
         Student Results
       </Typography>
       <TextField
-        label="Search by name or Regestration number"
+        label="Search by name or Registration number"
         placeholder="Enter Here"
         variant="outlined"
         value={searchInput}
@@ -143,7 +143,7 @@ const Results = () => {
                   onClick={() => handleSort("rollNo")}
                   classes={{ root: styles.sortLabel, icon: styles.icon }}
                 >
-                  Roll Number
+                Registration Number
                 </TableSortLabel>
               </TableCell>
               <TableCell>Name</TableCell>

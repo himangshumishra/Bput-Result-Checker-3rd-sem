@@ -15,15 +15,14 @@
 
 .card {
   position: relative;
-  min-width: 90%; 
-  min-height: 90%;
+  /* min-width: 90%;  */
+  /* min-height: 90%; */
   padding: 20px;
   padding-top: 0;
   margin: 10px;
   border-radius: 8px;
   backdrop-filter: blur(15px);
   box-shadow: 0 8px 16px rgba(105, 50, 224, 0.685); 
-  overflow-y: auto;
 }
 
 button{
