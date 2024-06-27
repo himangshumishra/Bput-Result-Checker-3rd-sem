@@ -47,9 +47,12 @@ const UniqueStudentResult = () => {
   return (
     <Container className={styles.overlay}>
       <Paper className={styles.card}>
-        <IconButton className={styles.closeButton} onClick={handleClose}>
-          <CloseIcon />
-        </IconButton>
+        {/* <IconButton style={{color:'red'}}className={styles.closeButton} onClick={handleClose}> */}
+        <div className={styles.closeButton}>
+
+          <CloseIcon onClick={handleClose} />
+        </div>
+        {/* </IconButton> */}
         <Typography variant="h5" gutterBottom>
           Detailed Result for <br /><span style={{fontWeight:'bolder'}}>{selectedStudent.name}</span>
         </Typography>
@@ -71,9 +74,9 @@ const UniqueStudentResult = () => {
               <TableBody>
                 {subjects.map((subject, index) => (
                   <TableRow key={index}>
-                    <TableCell  style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.name}</TableCell>
-                    <TableCell style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.grade}</TableCell>
-                    <TableCell style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.points}</TableCell>
+                    <TableCell  style={{fontWeight:'bolder',fontSize:'73%'}}>{subject.name}</TableCell>
+                    <TableCell style={{fontWeight:'bolder',fontSize:'73%'}}>{subject.grade}</TableCell>
+                    <TableCell style={{fontWeight:'bolder',fontSize:'73%'}}>{subject.points}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

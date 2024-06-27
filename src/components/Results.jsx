@@ -115,7 +115,8 @@ const Results = () => {
         Student Results
       </Typography>
       <TextField
-        label="Search by name or roll number"
+        label="Search by name or Regestration number"
+        placeholder="Enter Here"
         variant="outlined"
         value={searchInput}
         onChange={handleSearchInputChange}

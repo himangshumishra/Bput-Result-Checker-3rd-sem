@@ -15,7 +15,7 @@
 
 .card {
   position: relative;
-  /* min-width: 90%;  */
+  min-width: 90%; 
   min-height: 90%;
   padding: 20px;
   padding-top: 0;
@@ -39,14 +39,15 @@ button:hover {
   opacity: 0.9;
 }
 
-.cell{
-  font-weight: bolder;
-  
-}
-/* .closeButton {
+
+.closeButton {
+  margin: 10px;
   position: absolute;
-  top: 10px;
-  right: 10px;
   color: #ff0000;
-  max-width: fit-content;
-} */
+  /* border: solid red; */
+border-radius: 50%;
+
+}
+.closeButton:hover{
+  background-color: #ffdddd8d;
+}
