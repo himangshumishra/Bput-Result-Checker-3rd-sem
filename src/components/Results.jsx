@@ -111,10 +111,11 @@ const Results = () => {
 
   return (
     <Container className={styles.fullScreenContainer}>
-      <Typography variant="h4" gutterBottom className={styles.h4Typography}>
+      <Typography variant="h4" gutterBottom className={styles.h4Typography}style={{fontWeight:'bold'}}>
         Student Results
       </Typography>
       <TextField
+      style={{backgroundColor:'#e3e5ff'}}
         label="Search by name or Registration number"
         placeholder="Enter Here"
         variant="outlined"

@@ -38,7 +38,7 @@ const UniqueStudentResult = () => {
 
 
   if (!selectedStudent) {
-    return <h1 style={{textAlign:'center'}}>No student selected</h1>; 
+    return <h2 style={{textAlign:'center'}}>Click on View Result To Check Full Result</h2>; 
   }
 
   // console.log('Subjects before render:', subjects);
