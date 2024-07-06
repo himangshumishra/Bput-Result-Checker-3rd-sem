@@ -75,9 +75,9 @@ const UniqueStudentResult = () => {
               <TableBody>
                 {subjects.map((subject, index) => (
                   <TableRow key={index}>
-                    <TableCell  style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.name}</TableCell>
-                    <TableCell style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.grade}</TableCell>
-                    <TableCell style={{fontWeight:'bolder',fontSize:'75%'}}>{subject.points}</TableCell>
+                    <TableCell  style={{fontWeight:'bolder',fontSize:'90%'}}>{subject.name}</TableCell>
+                    <TableCell style={{fontWeight:'bolder',fontSize:'90%'}}>{subject.grade}</TableCell>
+                    <TableCell style={{fontWeight:'bolder',fontSize:'90%'}}>{subject.points}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
