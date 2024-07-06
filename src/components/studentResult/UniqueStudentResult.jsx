@@ -58,10 +58,10 @@ const UniqueStudentResult = () => {
           Detailed Result for <br /><span style={{fontWeight:'bolder'}}>{selectedStudent.name}</span>
         </Typography>
         <Typography variant="h5">
-         
-          <strong>Registration Number:</strong> {selectedStudent.rollNo}
-          <hr />
+          Registration Number: {selectedStudent.rollNo}
         </Typography>
+        <p style={{marginTop:'0px', fontWeight:'bold'}}>{selectedStudent.branchName}</p>
+          <hr />
         {subjects.length > 0 ? (
        <TableContainer>
             <Table>

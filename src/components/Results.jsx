@@ -112,7 +112,7 @@ const Results = () => {
   return (
     <Container className={styles.fullScreenContainer}>
       <Typography variant="h4" gutterBottom className={styles.h4Typography}style={{fontWeight:'bold'}}>
-        Student Results
+        Student Results-4th Sem
       </Typography>
       <TextField
       style={{backgroundColor:'#e3e5ff'}}
