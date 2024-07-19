@@ -37,6 +37,7 @@ const Results = () => {
       try {
         const response = await axios.get("https://raw.githubusercontent.com/bhaluop/JSON-Store/main/data.json");
         const data = response.data;
+        // console.log(data);
         setData(data);
         const flattenedData = data
           .filter(item => Array.isArray(item))

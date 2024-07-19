@@ -11,9 +11,13 @@ const UniqueStudentResult = () => {
 
   useEffect(() => {
     if (selectedStudent && data.length > 0) {
-      const studentId = selectedStudent.rollNo % 100;
+      let studentId = selectedStudent.rollNo % 1000;
+      if (studentId === 0) {
+        studentId = 100;
+      }
+      // console.log('Computed studentId:', studentId);
       // console.log(selectedStudent);
-
+// console.log(data.length);
       if (studentId > 0 && studentId <= data.length) {
         const studentData = data[studentId - 1];
         if (studentData[1]) {
